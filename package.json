@@ -1,0 +1,14 @@
+{
+  "name": "node_http_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemom server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Dankyi Anno Kwaku",
+  "license": "ISC"
+}
