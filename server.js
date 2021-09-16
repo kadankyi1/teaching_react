@@ -1,7 +1,6 @@
 const http = require('http');
 const fs = require('fs');
 
-
 const hostname = '127.0.0.1';
 const port = 3000;
 
@@ -12,9 +11,12 @@ const server = http.createServer( (req, res) => {
     console.log(req.url);
 
     switch(req.url) {
-         case '/about': filePath =  __dirname + 'public/about.html'; 
+         case '/aboutus': 
+         filePath =  __dirname + '/public/about.html'; 
          break;
-         default: filePath = __dirname + 'public/index.html'; 
+
+         default: 
+         filePath = __dirname + '/public/index.html'; 
          break;
     }
 
@@ -23,7 +25,6 @@ const server = http.createServer( (req, res) => {
         res.setHeader('Content-Type', 'text/html');
         res.end(data, 'utf8');
     });
-
 
 });
 
