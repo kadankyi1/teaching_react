@@ -1,1 +1,1 @@
-# teaching_react
+# Teaching CodeYourFuture Trainees React & Node.js
